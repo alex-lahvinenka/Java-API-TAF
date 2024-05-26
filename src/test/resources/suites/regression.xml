@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="Full regression suite" thread-count="5" parallel="true">
+    <test name="Jokes tests">
+        <packages>
+            <package name="com.jokesApi"></package>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,43 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": ["array", "object"],
+  "default": [],
+  "items":{
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "type",
+      "setup",
+      "punchline",
+      "id"
+    ],
+    "properties": {
+      "type": {
+        "title": "Type",
+        "type": "string",
+        "default": "",
+        "pattern": "^.+$"
+      },
+      "setup": {
+        "title": "Setup",
+        "type": "string",
+        "default": "",
+        "pattern": "^(.+[\\r\\n]*)+$"
+      },
+      "punchline": {
+        "title": "Punchline",
+        "type": "string",
+        "default": "",
+        "pattern": "^(.+[\\r\\n]*)+$"
+      },
+      "id": {
+        "title": "Id",
+        "type": "integer",
+        "default": 0
+      }
+    }
+  }
+
+}
